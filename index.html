@@ -30,9 +30,9 @@
     --radius: 10px;
     --radius-sm: 6px;
   }
-
+ 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--bg);
@@ -40,7 +40,7 @@
     min-height: 100vh;
     font-size: 14px;
   }
-
+ 
   header {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
@@ -53,7 +53,7 @@
     top: 0;
     z-index: 100;
   }
-
+ 
   .logo {
     font-size: 15px;
     font-weight: 600;
@@ -63,19 +63,19 @@
     align-items: center;
     gap: 8px;
   }
-
+ 
   .logo-dot {
     width: 8px; height: 8px;
     border-radius: 50%;
     background: var(--red);
   }
-
+ 
   .header-right {
     display: flex;
     align-items: center;
     gap: 12px;
   }
-
+ 
   .market-select {
     font-family: 'DM Sans', sans-serif;
     font-size: 13px;
@@ -88,9 +88,9 @@
     cursor: pointer;
     outline: none;
   }
-
+ 
   .market-select:focus { border-color: var(--blue); }
-
+ 
   .view-tabs {
     display: flex;
     background: var(--surface2);
@@ -98,7 +98,7 @@
     padding: 3px;
     gap: 2px;
   }
-
+ 
   .view-tab {
     font-family: 'DM Sans', sans-serif;
     font-size: 12px;
@@ -111,15 +111,15 @@
     cursor: pointer;
     transition: all 0.15s;
   }
-
+ 
   .view-tab.active {
     background: var(--surface);
     color: var(--text);
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   }
-
+ 
   .main { padding: 28px 32px; max-width: 1400px; margin: 0 auto; }
-
+ 
   .loading {
     display: flex;
     align-items: center;
@@ -128,7 +128,7 @@
     flex-direction: column;
     gap: 16px;
   }
-
+ 
   .spinner {
     width: 32px; height: 32px;
     border: 2px solid var(--border);
@@ -136,11 +136,11 @@
     border-radius: 50%;
     animation: spin 0.7s linear infinite;
   }
-
+ 
   @keyframes spin { to { transform: rotate(360deg); } }
-
+ 
   .loading-text { font-size: 13px; color: var(--text-2); }
-
+ 
   .error-banner {
     background: var(--red-bg);
     border: 1px solid var(--red-border);
@@ -150,25 +150,25 @@
     font-size: 13px;
     margin-bottom: 24px;
   }
-
+ 
   .summary-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0,1fr));
     gap: 12px;
     margin-bottom: 28px;
   }
-
+ 
   .stat {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 16px 20px;
   }
-
+ 
   .stat-label { font-size: 11px; font-weight: 500; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
   .stat-val { font-size: 26px; font-weight: 600; letter-spacing: -0.02em; color: var(--text); line-height: 1; }
   .stat-sub { font-size: 11px; color: var(--text-3); margin-top: 4px; }
-
+ 
   .section-label {
     font-size: 11px;
     font-weight: 600;
@@ -177,14 +177,14 @@
     letter-spacing: 0.07em;
     margin-bottom: 14px;
   }
-
+ 
   .gap-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 12px;
     margin-bottom: 32px;
   }
-
+ 
   .gap-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -194,16 +194,16 @@
     transition: box-shadow 0.15s, border-color 0.15s;
     position: relative;
   }
-
+ 
   .gap-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); border-color: var(--border-strong); }
   .gap-card.critical { border-left: 3px solid var(--red); }
   .gap-card.mid { border-left: 3px solid var(--amber); }
   .gap-card.low { border-left: 3px solid #8FAF95; }
-
+ 
   .card-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; }
   .cuisine-name { font-size: 15px; font-weight: 600; letter-spacing: -0.01em; color: var(--text); }
   .cuisine-sub { font-size: 11px; color: var(--text-3); margin-top: 2px; }
-
+ 
   .score-badge {
     font-size: 12px;
     font-weight: 600;
@@ -212,14 +212,14 @@
     border-radius: 4px;
     flex-shrink: 0;
   }
-
+ 
   .score-critical { background: var(--red-bg); color: var(--red); }
   .score-mid { background: var(--amber-bg); color: var(--amber); }
   .score-low { background: var(--green-bg); color: var(--green); }
   .score-ok { background: var(--surface2); color: var(--text-3); }
-
+ 
   .pills { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 12px; }
-
+ 
   .pill {
     font-size: 10px;
     font-weight: 500;
@@ -227,28 +227,28 @@
     border-radius: 20px;
     letter-spacing: 0.01em;
   }
-
+ 
   .pill-red { background: var(--red-bg); color: var(--red); border: 1px solid var(--red-border); }
   .pill-amber { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber-border); }
   .pill-green { background: var(--green-bg); color: var(--green); border: 1px solid var(--green-border); }
   .pill-blue { background: var(--blue-bg); color: var(--blue); border: 1px solid var(--blue-border); }
   .pill-gray { background: var(--surface2); color: var(--text-2); border: 1px solid var(--border); }
-
+ 
   .divider { border: none; border-top: 1px solid var(--border); margin: 10px 0; }
-
+ 
   .metric-row { display: flex; justify-content: space-between; font-size: 12px; color: var(--text-2); padding: 3px 0; }
   .metric-val { font-weight: 500; color: var(--text); font-family: 'DM Mono', monospace; font-size: 12px; }
-
+ 
   .bar-bg { background: var(--surface2); border-radius: 3px; height: 3px; margin: 6px 0 10px; overflow: hidden; }
   .bar-fill { height: 100%; border-radius: 3px; }
-
+ 
   .sub-block { background: var(--surface2); border-radius: var(--radius-sm); padding: 10px 12px; margin-top: 10px; }
   .sub-block-label { font-size: 10px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 7px; }
   .chef-chips { display: flex; flex-wrap: wrap; gap: 5px; }
   .chef-chip { font-size: 11px; padding: 2px 8px; border-radius: 20px; background: var(--green-bg); color: var(--green); border: 1px solid var(--green-border); }
-
+ 
   .hint { font-size: 10px; color: var(--text-3); text-align: center; margin-top: 8px; letter-spacing: 0.02em; }
-
+ 
   .drill-overlay {
     display: none;
     position: absolute;
@@ -260,9 +260,9 @@
     z-index: 10;
     backdrop-filter: blur(2px);
   }
-
+ 
   .gap-card-wrap.open .drill-overlay { display: flex; }
-
+ 
   .drill-panel {
     background: var(--surface);
     border: 1px solid var(--border-strong);
@@ -272,22 +272,22 @@
     max-height: 90%;
     overflow-y: auto;
   }
-
+ 
   .drill-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
   .drill-title { font-size: 14px; font-weight: 600; letter-spacing: -0.01em; }
   .close-btn { background: none; border: none; font-size: 20px; color: var(--text-2); cursor: pointer; padding: 0 2px; line-height: 1; }
-
+ 
   .drill-section { margin-bottom: 16px; }
   .drill-section-label { font-size: 10px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 9px; }
-
+ 
   .drill-row { display: flex; align-items: center; justify-content: space-between; font-size: 12px; color: var(--text-2); padding: 5px 0; border-bottom: 1px solid var(--border); }
   .drill-row:last-child { border-bottom: none; }
   .drill-val { font-weight: 600; color: var(--text); font-family: 'DM Mono', monospace; font-size: 12px; }
   .drill-sub { font-size: 10px; color: var(--text-3); margin-left: 5px; font-family: 'DM Mono', monospace; }
-
+ 
   .mini-bar-bg { background: var(--surface2); border-radius: 3px; height: 3px; flex: 1; margin: 0 10px; overflow: hidden; }
   .mini-bar-fill { height: 100%; border-radius: 3px; }
-
+ 
   .staples-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
   .staple-item { font-size: 11px; padding: 4px 8px; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 6px; }
   .staple-item.covered { background: var(--green-bg); color: var(--green); }
@@ -295,26 +295,26 @@
   .staple-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
   .staple-item.covered .staple-dot { background: var(--green); }
   .staple-item.missing .staple-dot { background: var(--red); }
-
+ 
   .gap-card-wrap { position: relative; }
-
+ 
   .score-breakdown {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6px;
     margin-bottom: 14px;
   }
-
+ 
   .score-factor {
     background: var(--surface2);
     border-radius: var(--radius-sm);
     padding: 8px 10px;
   }
-
+ 
   .sf-label { font-size: 10px; color: var(--text-3); margin-bottom: 3px; }
   .sf-val { font-size: 13px; font-weight: 600; color: var(--text); font-family: 'DM Mono', monospace; }
   .sf-pts { font-size: 10px; color: var(--text-3); margin-left: 4px; }
-
+ 
   /* Chef alignment view */
   .chef-table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
   table { width: 100%; border-collapse: collapse; font-size: 13px; }
@@ -322,16 +322,16 @@
   td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text); vertical-align: middle; }
   tr:last-child td { border-bottom: none; }
   tr:hover td { background: var(--surface2); }
-
+ 
   .ok-badge { font-size: 11px; padding: 3px 9px; border-radius: 20px; background: var(--green-bg); color: var(--green); border: 1px solid var(--green-border); font-weight: 500; }
   .misalign-badge { font-size: 11px; padding: 3px 9px; border-radius: 20px; background: var(--red-bg); color: var(--red); border: 1px solid var(--red-border); font-weight: 500; }
   .dish-item { font-size: 11px; color: var(--text-2); padding: 2px 0; display: flex; align-items: center; gap: 6px; }
   .dish-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
-
+ 
   .empty-state { padding: 48px; text-align: center; color: var(--text-3); font-size: 13px; }
-
+ 
   .last-updated { font-size: 11px; color: var(--text-3); }
-
+ 
   .config-btn { font-size: 12px; padding: 5px 12px; border: 1px solid var(--border-strong); border-radius: var(--radius-sm); background: transparent; color: var(--text-2); cursor: pointer; font-family: 'DM Sans', sans-serif; }
   .config-btn:hover { background: var(--surface2); }
   .config-panel { display: none; position: absolute; top: 56px; right: 16px; background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--radius); padding: 16px; z-index: 200; width: 260px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
@@ -345,7 +345,7 @@
 </style>
 </head>
 <body>
-
+ 
 <header>
   <div class="logo">
     <div class="logo-dot"></div>
@@ -361,7 +361,7 @@
     </div>
   </div>
 </header>
-
+ 
 <div id="configPanel" class="config-panel">
   <div class="config-title">Menu capacity (subscription slots)</div>
   <div class="config-row"><span class="config-label">New York</span><input class="config-input" id="cap-New York" type="number" value="430"></div>
@@ -374,7 +374,7 @@
   <div class="config-row"><span class="config-label">Toronto</span><input class="config-input" id="cap-Toronto" type="number" value="85"></div>
   <button class="config-save" onclick="saveConfig()">Apply & refresh</button>
 </div>
-
+ 
 <div id="capacityPanel" style="display:none;background:var(--surface);border-bottom:1px solid var(--border);padding:12px 32px;position:sticky;top:56px;z-index:99;">
   <div style="max-width:1400px;margin:0 auto;">
     <div style="font-size:11px;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px;">Menu capacity — subscription slots por market</div>
@@ -404,10 +404,10 @@
     </div>
   </div>
 </div>
-
+ 
 <script>
 const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwobwLOmMRTKNoiiY-vs0C22TAHhdf1NN0uOqkSASjg12aMtF_e6lTIGPYFByjqeumtRg/exec';
-
+ 
 // ─── CONFIG ───────────────────────────────────────────
 const DS_WEEKS = 8;
 const PORTFOLIO_FACTOR = 0.75;
@@ -419,8 +419,8 @@ const DS_MID_THRESHOLD = 0.95;
 const DS_HIGH = 1.0;
 const SEO_HIGH = 3.0;
 const SEO_MID = 1.0;
-
-
+ 
+ 
 // ─── CUISINE HIERARCHY ────────────────────────────────
 const CUISINE_HIERARCHY = {
   'african': ['east african','egyptian','moroccan','north african','south african','west african'],
@@ -431,13 +431,13 @@ const CUISINE_HIERARCHY = {
   'latin american': ['argentinian','brazilian','mexican','peruvian'],
   'middle eastern': ['iranian','israeli','lebanese','turkish'],
 };
-
+ 
 // Build reverse map: subcuisine -> parent cuisine
 const SUBCUISINE_TO_CUISINE = {};
 Object.entries(CUISINE_HIERARCHY).forEach(([cuisine, subs]) => {
   subs.forEach(sub => { SUBCUISINE_TO_CUISINE[sub] = cuisine; });
 });
-
+ 
 function cuisineMatches(a, b) {
   // Returns true if a and b are related (same, parent/child, or siblings via hierarchy)
   const al = a.trim().toLowerCase();
@@ -455,8 +455,8 @@ function cuisineMatches(a, b) {
   if (aParent === bl || bParent === al) return true;
   return false;
 }
-
-
+ 
+ 
 // ─── MARKET MENU SLOTS ────────────────────────────────
 let MARKET_SLOTS = {
   'New York': 430,
@@ -468,7 +468,7 @@ let MARKET_SLOTS = {
   'Miami': 167,
   'Toronto': 85,
 };
-
+ 
 // ─── MENU CAPACITY PER MARKET ─────────────────────────
 let MENU_CAPACITY = {
   'New York': 430,
@@ -480,7 +480,7 @@ let MENU_CAPACITY = {
   'Miami': 167,
   'Toronto': 85,
 };
-
+ 
 // ─── MENU CAPACITY BY MARKET ──────────────────────────
 const DEFAULT_MENU_CAPACITY = {
   'New York': 430,
@@ -493,17 +493,17 @@ const DEFAULT_MENU_CAPACITY = {
   'Toronto': 85,
 };
 let menuCapacity = { ...DEFAULT_MENU_CAPACITY };
-
+ 
 function getMenuCapacity(market) {
   return menuCapacity[market] || 200;
 }
-
+ 
 // ─── STATE ─────────────────────────────────────────────
 let allData = {};
 let currentMarket = null;
 let currentView = 'gaps';
 let marketList = [];
-
+ 
 // ─── FETCH ─────────────────────────────────────────────
 async function fetchTab(tabName) {
   const url = `${APPS_SCRIPT_URL}?tab=${encodeURIComponent(tabName)}`;
@@ -511,18 +511,18 @@ async function fetchTab(tabName) {
   if (!res.ok) throw new Error(`Failed to fetch tab: ${tabName}`);
   return await res.json();
 }
-
+ 
 async function fetchTabFiltered(tabName, market) {
   const url = `${APPS_SCRIPT_URL}?tab=${encodeURIComponent(tabName)}&market=${encodeURIComponent(market)}`;
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Failed to fetch tab: ${tabName}`);
   return await res.json();
 }
-
+ 
 function setLoading(msg) {
   document.getElementById('loadingText').textContent = msg;
 }
-
+ 
 async function loadAllData() {
   try {
     setLoading('Loading data from Google Sheets...');
@@ -531,7 +531,7 @@ async function loadAllData() {
       fetchTab('SEO'),
       fetchTab('Times on Menu'),
     ]);
-
+ 
     // Load per-market TOM v2 tabs in parallel
     setLoading('Loading weekly menu data...');
     const tomv2Tabs = {
@@ -552,7 +552,7 @@ async function loadAllData() {
     const tomv2 = tomv2Results.flatMap(r => r.data);
     setLoading('Loading D/S ratios...');
     const dsMarkets = await loadDSTabs(chefs);
-
+ 
     // Build deduped product map: market -> product_id -> latest row
     const productMap = {};
     tomv2.forEach(t => {
@@ -573,22 +573,22 @@ async function loadAllData() {
     console.log('db total:', db.length, 'NY:', dbNY.length, 'NY active:', dbNYActive.length);
     if(dbNYActive.length > 0) console.log('sample NY active:', JSON.stringify(dbNYActive[0]));
     allData = { chefs, db, seo, tom, tomv2, ds: dsMarkets };
-
+ 
     // Extract market list from SEO columns
     if (seo.length > 0) {
       marketList = Object.keys(seo[0]).filter(k => k !== 'Sub Cuisine' && k !== '' && k !== 'Sub Cuisine');
     }
-
+ 
     // Populate market selector
     const sel = document.getElementById('marketSelect');
     sel.innerHTML = marketList.map(m => `<option value="${m}">${m}</option>`).join('');
     currentMarket = marketList[0];
-
+ 
     document.getElementById('lastUpdated').textContent = `Updated ${new Date().toLocaleTimeString()}`;
     initCapacityPanel();
     document.getElementById('loadingState').style.display = 'none';
     document.getElementById('appContent').style.display = 'block';
-
+ 
     renderAll();
   } catch(e) {
     document.getElementById('loadingState').style.display = 'none';
@@ -596,7 +596,7 @@ async function loadAllData() {
     showError(`Error loading data: ${e.message}. Make sure the Apps Script is deployed and the sheet is shared.`);
   }
 }
-
+ 
 async function loadDSTabs(chefs) {
   const tabsToTry = ['NY D/S','LA D/S','ATL D/S','CH D/S','AUS D/S','SEA D/S','MIA D/S','TOR D/S'];
   const results = await Promise.allSettled(tabsToTry.map(tab => fetchTab(tab).then(data => ({ tab, data }))));
@@ -606,7 +606,7 @@ async function loadDSTabs(chefs) {
   });
   return dsMap;
 }
-
+ 
 // ─── MARKET MAPPING ────────────────────────────────────
 function getDSTabForMarket(market) {
   // Map SEO market names to D/S tab names
@@ -622,9 +622,9 @@ function getDSTabForMarket(market) {
   };
   return mapping[market] || null;
 }
-
+ 
 // ─── CORE LOGIC ────────────────────────────────────────
-
+ 
 // ─── COLUMN NAME HELPERS ──────────────────────────────
 // DB columns: PRODUCT_ID, CHEF_NAME (or "chef name"), PRODUCT_NAME, cuisine, subcuisine,
 //             meal_type, protein_category, primary_protein, rating, EXTRA_FEE, food_cost, status
@@ -638,7 +638,7 @@ function dbField(row, ...candidates) {
   }
   return '';
 }
-
+ 
 function isExtraFee(row) {
   const val = dbField(row, 'EXTRA_FEE', 'extra_fee');
   if (val === '' || val === null || val === undefined) return false;
@@ -647,7 +647,7 @@ function isExtraFee(row) {
   const s = val.toString().trim().toLowerCase();
   return s !== '0' && s !== 'false' && s !== 'no' && s !== '';
 }
-
+ 
 function isPremiumFee(row) {
   const val = dbField(row, 'premium_fee', 'PREMIUM_FEE');
   if (val === '' || val === null || val === undefined) return false;
@@ -656,7 +656,7 @@ function isPremiumFee(row) {
   const s = val.toString().trim().toLowerCase();
   return s !== '0' && s !== 'false' && s !== 'no' && s !== '';
 }
-
+ 
 function getChefSpecialties(chefName, market) {
   const row = allData.chefs.find(r => {
     const n = (r['Name'] || r['name'] || '').toString().trim().toLowerCase();
@@ -668,7 +668,7 @@ function getChefSpecialties(chefName, market) {
     .map(k => row[k] ? row[k].trim() : '')
     .filter(Boolean);
 }
-
+ 
 function isAligned(dish, chefName, market) {
   const specialties = getChefSpecialties(chefName, market);
   if (specialties.length === 0) return true;
@@ -680,7 +680,7 @@ function isAligned(dish, chefName, market) {
     return cuisineMatches(sl, mealSubcuisine) || cuisineMatches(sl, mealCuisine);
   });
 }
-
+ 
 function getSupplyScore(subcuisine, market, days = 90) {
   const cutoff = new Date();
   cutoff.setDate(cutoff.getDate() - days);
@@ -696,16 +696,16 @@ function getSupplyScore(subcuisine, market, days = 90) {
     return sum + (parseFloat(t['TIMES_ON_MENU'])||0) * (parseFloat(t['UNITS_SOLD'])||0);
   }, 0);
 }
-
+ 
 function getDS8WeekAvg(subcuisine, market) {
   const tabName = getDSTabForMarket(market);
   if (!tabName || !allData.ds[tabName]) return null;
-
+ 
   const tab = allData.ds[tabName];
   // The tab has TWO blocks: cuisine block (col key = "cuisine_name") and
   // subcuisine block (col key = "sub_cuisine_name"). We look in sub_cuisine_name first.
   const scLower = subcuisine.trim().toLowerCase();
-
+ 
   // The D/S tab has two blocks both using "cuisine_name" as the key column
   // Block 1: cuisine-level rows (african, american, asian, etc.)
   // Block 2: subcuisine-level rows (mexican, korean, japanese, etc.)
@@ -727,9 +727,9 @@ function getDS8WeekAvg(subcuisine, market) {
   } else if (allMatches.length === 1) {
     row = allMatches[0].r;
   }
-
+ 
   if (!row) return null;
-
+ 
   // Parse date key like "2025-1-5" or "Sat Jan 04 2025 ..."
   function parseColDate(k) {
     // Handle YYYY-M-D format
@@ -739,21 +739,21 @@ function getDS8WeekAvg(subcuisine, market) {
     const d = new Date(k);
     return isNaN(d.getTime()) ? null : d;
   }
-
+ 
   const EXCLUDE_KEYS = new Set(['cuisine_name','sub_cuisine_name','slot_type','Avg D/S Ratio','Avg Sales %','Avg Supply','Chefs Offering','Specialty Chefs','SEO Inputs','Avg Ratings','Cuisine Staples Completion %']);
-
+ 
   const dateKeys = Object.keys(row).filter(k => {
     if (k.startsWith('__col') || k.startsWith('Cuisine Staples') || EXCLUDE_KEYS.has(k)) return false;
     return parseColDate(k) !== null;
   });
-
+ 
   // Sort chronologically and take last DS_WEEKS
   const sorted = dateKeys.sort((a,b) => parseColDate(a) - parseColDate(b)).slice(-DS_WEEKS);
   const vals = sorted.map(k => parseFloat(row[k])).filter(v => !isNaN(v) && v > 0);
   if (vals.length === 0) return null;
   return vals.reduce((a,b) => a+b, 0) / vals.length;
 }
-
+ 
 function getSEOShare(subcuisine, market) {
   const row = allData.seo.find(r => {
     const name = (r['Sub Cuisine'] || Object.values(r)[0] || '').toString().trim().toLowerCase();
@@ -768,12 +768,12 @@ function getSEOShare(subcuisine, market) {
   // Values are already percentages (e.g. 34.17, 0.68)
   return Math.round(num * 10) / 10;
 }
-
+ 
 function getChefCoverageScore(subcuisine, market) {
   const chefsInMarket = allData.chefs.filter(r =>
     (r['Market']||'').trim().toLowerCase() === market.trim().toLowerCase()
   );
-
+ 
   const withSpecialty = chefsInMarket.filter(r =>
     ['Specialty 1','Specialty 2','Specialty 3','Specialty 4','Specialty 5'].some(k => {
       if (!r[k]) return false;
@@ -782,9 +782,9 @@ function getChefCoverageScore(subcuisine, market) {
       return cuisineMatches(sp, sc);
     })
   );
-
+ 
   if (withSpecialty.length === 0) return { score: 2, chefs: [], count: 0 };
-
+ 
   const ratings = withSpecialty.map(c => {
     const cname = (c['Name']||'').trim().toLowerCase();
     const marketPids = new Set(
@@ -804,10 +804,10 @@ function getChefCoverageScore(subcuisine, market) {
     const rs = relevantMeals.map(d => parseFloat(d['hist_rating']||0)).filter(v => !isNaN(v) && v > 0);
     return rs.length > 0 ? rs.reduce((a,b)=>a+b,0)/rs.length : 0;
   }).filter(r => r > 0);
-
+ 
   const hasGoodChef = ratings.some(r => r >= RATING_THRESHOLD);
   const score = hasGoodChef ? 0 : 1;
-
+ 
   return {
     score,
     chefs: withSpecialty.map(c => c['Name']),
@@ -815,12 +815,12 @@ function getChefCoverageScore(subcuisine, market) {
     avgRating: ratings.length > 0 ? (ratings.reduce((a,b)=>a+b,0)/ratings.length).toFixed(1) : '—'
   };
 }
-
+ 
 function getPortfolioScore(subcuisine, market, seoShare, dsAvg) {
   const dsAdj = (dsAvg !== null && dsAvg > 0) ? dsAvg : 1.0;
   const minDishes = Math.round(getMenuCapacity(market) * (seoShare/100) * dsAdj * 0.85);
   const scLower = subcuisine.trim().toLowerCase();
-
+ 
   // Get TOM rows for this market+subcuisine in last 90 days
   const cutoff90 = new Date(); cutoff90.setDate(cutoff90.getDate() - 90);
   const relevantTom = allData.tom.filter(t => {
@@ -830,8 +830,8 @@ function getPortfolioScore(subcuisine, market, seoShare, dsAvg) {
     const d = new Date((t['YEAR_MONTH']||'').toString());
     return !isNaN(d.getTime()) && d >= cutoff90;
   });
-
-
+ 
+ 
     // Weekly metrics using Times on Menu v2
   // Use last 8 weeks available in the data for this market (with 6-week lag)
   const allMarketWeeks = [...new Set(
@@ -840,7 +840,7 @@ function getPortfolioScore(subcuisine, market, seoShare, dsAvg) {
       .map(t => ((t['week']||t['WEEK']||'')).toString().substring(0,10))
       .filter(w => w && w.length >= 10)
   )].sort();
-
+ 
   // Apply 6-week lag: exclude the most recent 6 weeks, take last 8 before that
   const lagWeeks = 6;
   const windowWeeks = 8;
@@ -849,11 +849,11 @@ function getPortfolioScore(subcuisine, market, seoShare, dsAvg) {
   
   const windowEnd = allWeeks.length > 0 ? new Date(allWeeks[allWeeks.length - 1]) : new Date();
   const cutoff8w = allWeeks.length > 0 ? new Date(allWeeks[0]) : new Date();
-
+ 
   // For each week, count distinct meals of this subcuisine
   const weeklyMap = {};
   allWeeks.forEach(w => { weeklyMap[w] = { mealSet: new Set(), highRatedSet: new Set() }; });
-
+ 
   (allData.tomv2 || []).filter(t => {
     if (((t['market']||t['MARKET']||'')).trim().toLowerCase() !== market.trim().toLowerCase()) return false;
     const tsc = ((t['subcuisine']||t['SUBCUISINE']||'')).trim().toLowerCase();
@@ -871,7 +871,7 @@ function getPortfolioScore(subcuisine, market, seoShare, dsAvg) {
       weeklyMap[w].highRatedSet.add(pid);
     }
   });
-
+ 
   const weeksWithMeals = allWeeks.filter(w => weeklyMap[w] && weeklyMap[w].mealSet && weeklyMap[w].mealSet.size > 0);
   const weeksOnMenu = weeksWithMeals.length;
   const avgMealsPerWeek = weeksWithMeals.length > 0
@@ -880,7 +880,7 @@ function getPortfolioScore(subcuisine, market, seoShare, dsAvg) {
   const avgHighRatedPerWeek = weeksWithMeals.length > 0
     ? Math.round(weeksWithMeals.reduce((s,w) => s + weeklyMap[w].highRatedSet.size, 0) / weeksWithMeals.length * 10) / 10
     : 0;
-
+ 
   // db is deduped from tomv2 — filter directly by market, subcuisine and status
   const dishes = allData.db.filter(d => {
     const status = (d['status']||'').toString().toLowerCase();
@@ -891,28 +891,28 @@ function getPortfolioScore(subcuisine, market, seoShare, dsAvg) {
     const cuis = (d['cuisine']||'').trim().toLowerCase();
     return cuisineMatches(sc, scLower) || cuisineMatches(cuis, scLower);
   });
-
+ 
   const n = dishes.length;
   const noFeeDishes = dishes.filter(d => !isPremiumFee(d));
   const feeDishes = dishes.filter(d => isPremiumFee(d));
   const highRated = noFeeDishes.filter(d => parseFloat(d['hist_rating']||0) >= RATING_THRESHOLD).length;
   const premiumHighRated = feeDishes.filter(d => parseFloat(d['hist_rating']||0) >= RATING_THRESHOLD).length;
   const highRatedPct = noFeeDishes.length > 0 ? highRated/noFeeDishes.length : 0;
-
+ 
   const bySpecialty = dishes.filter(d => {
     const chefName = dbField(d,'chef_name','CHEF_NAME');
     const specs = getChefSpecialties(chefName, market);
     return specs.some(s => cuisineMatches(s.toLowerCase(), scLower));
   }).length;
   const specialtyPct = n > 0 ? bySpecialty/n : 0;
-
+ 
   let fails = 0;
   if (n < minDishes) fails++;
   if (highRatedPct < RATING_QUALITY_PCT) fails++;
   if (specialtyPct < SPECIALTY_PCT) fails++;
-
+ 
   const score = fails >= 2 ? 2 : fails === 1 ? 1 : 0;
-
+ 
   return {
     score, n, highRated,
     highRatedPct: Math.round(highRatedPct*100),
@@ -926,7 +926,7 @@ function getPortfolioScore(subcuisine, market, seoShare, dsAvg) {
     dishes
   };
 }
-
+ 
 function computeGapScore(seoShare, dsAvg, chefCovScore, portfolioScore) {
   // SEO
   let seoScore = seoShare >= SEO_HIGH ? 2 : seoShare >= SEO_MID ? 1 : 0;
@@ -937,16 +937,16 @@ function computeGapScore(seoShare, dsAvg, chefCovScore, portfolioScore) {
   const total = seoScore + dsScore + chefCovScore + portfolioScore;
   return { total, seoScore, dsScore };
 }
-
+ 
 function severityFromScore(score, dsAvg) {
   if (dsAvg !== null && dsAvg < DS_GAP_THRESHOLD) return 'ok';
   if (score >= 6) return 'critical';
   if (score >= 3) return 'mid';
   return 'low';
 }
-
+ 
 // ─── RENDER ───────────────────────────────────────────
-
+ 
 function switchView(v) {
   currentView = v;
   document.getElementById('view-gaps').style.display = v === 'gaps' ? 'block' : 'none';
@@ -954,12 +954,12 @@ function switchView(v) {
   document.getElementById('btn-gaps').classList.toggle('active', v === 'gaps');
   document.getElementById('btn-chefs').classList.toggle('active', v !== 'gaps');
 }
-
+ 
 function onMarketChange() {
   currentMarket = document.getElementById('marketSelect').value;
   renderAll();
 }
-
+ 
 function openDrill(idx) {
   document.querySelectorAll('.gap-card-wrap').forEach((w,i) => w.classList.toggle('open', i === idx));
 }
@@ -967,30 +967,29 @@ function closeDrill(e) {
   e.stopPropagation();
   document.querySelectorAll('.gap-card-wrap').forEach(w => w.classList.remove('open'));
 }
-
+ 
 function renderAll() {
   if (!currentMarket) return;
   renderGaps();
   renderChefs();
 }
-
+ 
 function renderGaps() {
   const market = currentMarket;
   const seoRows = allData.seo;
   // Menu capacity for this market (subscription slots)
   const totalDishes = MENU_CAPACITY[market] || 200;
-
+ 
   // Build cuisine list from SEO + all subcuisines in tomv2 for this market
   const seoNames = new Set(seoRows.map(r => (r['Sub Cuisine'] || Object.values(r)[0] || '').toString().trim().toLowerCase()).filter(Boolean));
   
-  // Get all unique subcuisines from tomv2 for this market (lowercased)
+  // Get all unique subcuisines from tomv2 across ALL markets (global list)
   const tomv2Subcuisines = [...new Set(
     (allData.tomv2 || [])
-      .filter(t => (t['market']||'').trim().toLowerCase() === market.trim().toLowerCase())
       .map(t => (t['subcuisine']||'').trim().toLowerCase())
       .filter(Boolean)
   )];
-
+ 
   // Merge SEO cuisines + tomv2 subcuisines (deduplicated, case-insensitive)
   // Prefer SEO casing when available, otherwise use tomv2 casing
   // Build unified name list: SEO names first (title case), then tomv2 names not in SEO
@@ -1008,7 +1007,7 @@ function renderGaps() {
     'american', 'asian', 'european', 'latin american', 'african',
     'caribbean', 'middle eastern', 'indian'
   ]);
-
+ 
   // Final dedup + filter
   const seenNames = new Set();
   const allNames = Object.values(seoNameMap).filter(name => {
@@ -1023,7 +1022,7 @@ function renderGaps() {
     seenNames.add(lc);
     return true;
   });
-
+ 
   const allCuisines = allNames.map(name => {
     const seoShare = getSEOShare(name, market);
     const dsAvg = getDS8WeekAvg(name, market);
@@ -1031,18 +1030,18 @@ function renderGaps() {
     const portfolio = getPortfolioScore(name, market, seoShare, dsAvg);
     const { total, seoScore, dsScore } = computeGapScore(seoShare, dsAvg, chefCov.score, portfolio.score);
     const severity = severityFromScore(total, dsAvg);
-
+ 
     return { name, seoShare, dsAvg, chefCov, portfolio, total, seoScore, dsScore, severity };
   }).filter(c => c.name && c.name !== 'Sub Cuisine');
-
+ 
   // Filter: only show subcuisines that appear in sub_cuisine_name block of any D/S tab
   // i.e. skip pure cuisine-level entries that only appear in cuisine_name block
   // Show all cuisines — SEO + tomv2 subcuisines
   const filteredCuisines = allCuisines.filter(c => c.name && c.name.trim() !== '');
-
+ 
   // Sort by SEO share descending
   filteredCuisines.sort((a,b) => b.seoShare - a.seoShare);
-
+ 
   // Summary
   const cuisines = filteredCuisines;
   const gaps = cuisines.filter(c => c.severity !== 'ok');
@@ -1055,25 +1054,25 @@ function renderGaps() {
     const chefName = dbField(d,'chef_name','CHEF_NAME');
     return !isAligned(d, chefName, market);
   }).length;
-
+ 
   document.getElementById('summaryGrid').innerHTML = `
     <div class="stat"><div class="stat-label">Critical gaps</div><div class="stat-val" style="color:var(--red);">${critical}</div><div class="stat-sub">high confidence</div></div>
     <div class="stat"><div class="stat-label">Total gaps</div><div class="stat-val">${gaps.length}</div><div class="stat-sub">D/S > 1.0</div></div>
     <div class="stat"><div class="stat-label">Misaligned meals</div><div class="stat-val">${misaligned}</div><div class="stat-sub">to archive</div></div>
     <div class="stat"><div class="stat-label">Cuisines tracked</div><div class="stat-val">${cuisines.length}</div><div class="stat-sub">from SEO data</div></div>
   `;
-
+ 
   document.getElementById('gapGrid').innerHTML = cuisines.map((c, idx) => {
     const sevColor = c.severity === 'critical' ? 'var(--red)' : c.severity === 'mid' ? 'var(--amber)' : c.severity === 'low' ? '#8FAF95' : 'var(--text-3)';
     const sevLabel = c.severity === 'critical' ? 'Critical' : c.severity === 'mid' ? 'Mid confidence' : c.severity === 'low' ? 'Low confidence' : 'Covered';
     const pillClass = c.severity === 'critical' ? 'pill-red' : c.severity === 'mid' ? 'pill-amber' : c.severity === 'low' ? 'pill-blue' : 'pill-green';
     const scoreClass = c.severity === 'critical' ? 'score-critical' : c.severity === 'mid' ? 'score-mid' : c.severity === 'low' ? 'score-ok' : 'score-ok';
     const dsDisplay = c.dsAvg !== null ? c.dsAvg.toFixed(2) : '—';
-
+ 
     const coverageBlock = c.chefCov.count > 0
       ? `<div class="sub-block"><div class="sub-block-label">Chefs with specialty (${c.chefCov.count})</div><div class="chef-chips">${c.chefCov.chefs.map(ch => `<span class="chef-chip">${ch}</span>`).join('')}</div></div>`
       : `<div class="sub-block" style="border-left:2px solid var(--red);"><div style="font-size:11px;color:var(--red);font-weight:500;">No chef with this specialty</div></div>`;
-
+ 
     return `
     <div class="gap-card-wrap">
       <div class="gap-card ${c.severity}" ondblclick="openDrill(${idx})">
@@ -1107,17 +1106,17 @@ function renderGaps() {
     </div>`;
   }).join('');
 }
-
+ 
 function buildDrillPanel(c) {
   const sevColor = c.severity === 'critical' ? 'var(--red)' : c.severity === 'mid' ? 'var(--amber)' : '#8FAF95';
-
+ 
   const scoreFactors = [
     { label: 'SEO signal', val: `${c.seoShare.toFixed(1)}%`, pts: c.seoScore },
     { label: 'D/S pressure', val: c.dsAvg !== null ? c.dsAvg.toFixed(2) : '—', pts: c.dsScore },
     { label: 'Chef coverage', val: c.chefCov.count > 0 ? `${c.chefCov.count} chef${c.chefCov.count>1?'s':''}` : 'None', pts: c.chefCov.score },
     { label: 'Portfolio', val: `${c.portfolio.n} meals`, pts: c.portfolio.score },
   ];
-
+ 
   // Protein breakdown
   const proteinMap = {};
   c.portfolio.dishes.forEach(d => {
@@ -1125,7 +1124,7 @@ function buildDrillPanel(c) {
     proteinMap[p] = (proteinMap[p]||0) + 1;
   });
   const proteinEntries = Object.entries(proteinMap).sort((a,b) => b[1]-a[1]);
-
+ 
   // Meal type breakdown
   const mealMap = {};
   c.portfolio.dishes.forEach(d => {
@@ -1133,16 +1132,16 @@ function buildDrillPanel(c) {
     mealMap[m] = (mealMap[m]||0) + 1;
   });
   const mealEntries = Object.entries(mealMap).sort((a,b) => b[1]-a[1]);
-
+ 
   const n = c.portfolio.n || 1;
-
+ 
   return `
     <div class="drill-panel" onclick="event.stopPropagation()">
       <div class="drill-header">
         <span class="drill-title">${c.name} — coverage detail</span>
         <button class="close-btn" onclick="closeDrill(event)">×</button>
       </div>
-
+ 
       <div class="drill-section">
         <div class="drill-section-label">Gap score breakdown — ${c.total}/8</div>
         <div class="score-breakdown">
@@ -1153,7 +1152,7 @@ function buildDrillPanel(c) {
             </div>`).join('')}
         </div>
       </div>
-
+ 
       <div class="drill-section">
         <div class="drill-section-label">Protein category</div>
         ${proteinEntries.length > 0 ? proteinEntries.map(([p,v]) => `
@@ -1163,7 +1162,7 @@ function buildDrillPanel(c) {
             <span class="drill-val">${v}<span class="drill-sub">${Math.round(v/n*100)}%</span></span>
           </div>`).join('') : '<div style="font-size:12px;color:var(--text-3);padding:6px 0;">No data</div>'}
       </div>
-
+ 
       <div class="drill-section">
         <div class="drill-section-label">Meal type</div>
         ${mealEntries.length > 0 ? mealEntries.map(([m,v]) => `
@@ -1173,7 +1172,7 @@ function buildDrillPanel(c) {
             <span class="drill-val">${v}<span class="drill-sub">${Math.round(v/n*100)}%</span></span>
           </div>`).join('') : '<div style="font-size:12px;color:var(--text-3);padding:6px 0;">No data</div>'}
       </div>
-
+ 
       <div class="drill-section" style="margin-bottom:0;">
         <div class="drill-section-label">Financials</div>
         <div class="drill-row"><span>Avg meals/week ≥ ${RATING_THRESHOLD}</span><span class="drill-val">${c.portfolio.avgHighRatedPerWeek}</span></div>
@@ -1185,40 +1184,40 @@ function buildDrillPanel(c) {
       </div>
     </div>`;
 }
-
+ 
 function renderChefs() {
   const market = currentMarket;
   const chefsInMarket = allData.chefs.filter(r =>
     (r['Market']||'').trim().toLowerCase() === market.trim().toLowerCase()
   );
-
+ 
   const rows = chefsInMarket.map(chef => {
     const name = (chef['Name'] || '').trim();
     const specialties = ['Specialty 1','Specialty 2','Specialty 3','Specialty 4','Specialty 5']
       .map(k => chef[k] ? chef[k].trim() : '').filter(Boolean);
-
+ 
     const dishes = allData.db.filter(d => {
       const cn = dbField(d,'chef_name','CHEF_NAME').trim().toLowerCase();
       const status = dbField(d,'status','STATUS').toString().toUpperCase().trim();
       const dMarket = (d['market']||'').trim().toLowerCase();
       return cn === name.toLowerCase() && status === 'ACTIVE' && dMarket === market.trim().toLowerCase();
     });
-
+ 
     const misaligned = dishes.filter(d => !isAligned(d, name, market));
     const ratings = dishes.map(d => parseFloat(d['hist_rating']||0)).filter(v => !isNaN(v) && v > 0);
     const avgRating = ratings.length > 0 ? (ratings.reduce((a,b)=>a+b,0)/ratings.length).toFixed(1) : '—';
     const nTotal = dishes.length;
     const nHighRated = dishes.filter(d => parseFloat(d['hist_rating']||0) >= RATING_THRESHOLD).length;
     const nExtraFee = dishes.filter(d => (parseFloat(d['premium_fee']||0) > 0)).length;
-
+ 
     return { name, specialties, avgRating, misaligned, ok: misaligned.length === 0, nTotal, nHighRated, nExtraFee };
   });
-
+ 
   if (rows.length === 0) {
     document.getElementById('chefBody').innerHTML = `<tr><td colspan="5" class="empty-state">No chefs found for ${market}</td></tr>`;
     return;
   }
-
+ 
   document.getElementById('chefBody').innerHTML = rows.map(r => `
     <tr>
       <td><span style="font-weight:500;">${r.name}</span></td>
@@ -1246,18 +1245,18 @@ function renderChefs() {
     </tr>
   `).join('');
 }
-
+ 
 function showError(msg) {
   const el = document.getElementById('errorBanner');
   el.style.display = 'block';
   el.textContent = msg;
 }
-
+ 
 function toggleCapacityPanel() {
   const panel = document.getElementById('capacityPanel');
   panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
 }
-
+ 
 function initCapacityPanel() {
   const container = document.getElementById('capacityInputs');
   container.innerHTML = Object.entries(menuCapacity).map(([market, cap]) => `
@@ -1269,7 +1268,7 @@ function initCapacityPanel() {
     </div>
   `).join('');
 }
-
+ 
 function updateCapacity(market, value) {
   const n = parseInt(value);
   if (!isNaN(n) && n > 0) {
@@ -1277,9 +1276,10 @@ function updateCapacity(market, value) {
     renderAll();
   }
 }
-
+ 
 // ─── INIT ──────────────────────────────────────────────
 loadAllData();
 </script>
 </body>
 </html>
+ 
